@@ -47,6 +47,14 @@ function conky_main()
     cairo_move_to (cr,startx,starty)
     cairo_line_to(cr, endx, endy)
 
+    -- rect
+    top_left_x=20
+    top_left_y=20
+    rec_width=100
+    rec_height=50
+
+    cairo_rectangle (cr, top_left_x, top_left_y, rec_width, rec_height)
+
     cairo_stroke(cr)
 
 --    if updates>5 then
